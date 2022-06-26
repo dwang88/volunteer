@@ -1,0 +1,37 @@
+[debug] [2022-06-24T01:35:58.214Z] ----------------------------------------------------------------------
+[debug] [2022-06-24T01:35:58.215Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\david\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2022-06-24T01:35:58.216Z] CLI Version:   11.1.0
+[debug] [2022-06-24T01:35:58.216Z] Platform:      win32
+[debug] [2022-06-24T01:35:58.216Z] Node Version:  v16.13.1
+[debug] [2022-06-24T01:35:58.216Z] Time:          Thu Jun 23 2022 18:35:58 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-06-24T01:35:58.217Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-24T01:35:58.260Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-24T01:35:58.262Z] > authorizing via signed-in user (davidwang1089@gmail.com)
+[debug] [2022-06-24T01:35:58.262Z] [iam] checking project volunteer-connect-e5e6c for permissions ["cloudconfig.configs.get","cloudconfig.configs.update","cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2022-06-24T01:35:58.265Z] > refreshing access token with scopes: []
+[debug] [2022-06-24T01:35:58.267Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-06-24T01:35:58.267Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-06-24T01:35:58.462Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-06-24T01:35:58.462Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-06-24T01:35:58.508Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/volunteer-connect-e5e6c:testIamPermissions [none]
+[debug] [2022-06-24T01:35:58.508Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/volunteer-connect-e5e6c:testIamPermissions {"permissions":["cloudconfig.configs.get","cloudconfig.configs.update","cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2022-06-24T01:35:58.693Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/volunteer-connect-e5e6c:testIamPermissions 200
+[debug] [2022-06-24T01:35:58.694Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/volunteer-connect-e5e6c:testIamPermissions {"permissions":["cloudconfig.configs.get","cloudconfig.configs.update","cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2022-06-24T01:35:58.696Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/volunteer-connect-e5e6c/serviceAccounts/volunteer-connect-e5e6c@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-06-24T01:35:58.697Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/volunteer-connect-e5e6c/serviceAccounts/volunteer-connect-e5e6c@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-06-24T01:35:58.994Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/volunteer-connect-e5e6c/serviceAccounts/volunteer-connect-e5e6c@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2022-06-24T01:35:58.995Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/volunteer-connect-e5e6c/serviceAccounts/volunteer-connect-e5e6c@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-06-24T01:35:58.997Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/volunteer-connect-e5e6c [none]
+[debug] [2022-06-24T01:35:59.512Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/volunteer-connect-e5e6c 200
+[debug] [2022-06-24T01:35:59.512Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/volunteer-connect-e5e6c {"projectId":"volunteer-connect-e5e6c","projectNumber":"81672738942","displayName":"Volunteer Connect","name":"projects/volunteer-connect-e5e6c","resources":{"hostingSite":"volunteer-connect-e5e6c","realtimeDatabaseInstance":"volunteer-connect-e5e6c-default-rtdb","storageBucket":"volunteer-connect-e5e6c.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[debug] [2022-06-24T01:35:59.513Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/volunteer-connect-e5e6c [none]
+[debug] [2022-06-24T01:35:59.812Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/volunteer-connect-e5e6c 200
+[debug] [2022-06-24T01:35:59.813Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/volunteer-connect-e5e6c {"projectId":"volunteer-connect-e5e6c","projectNumber":"81672738942","displayName":"Volunteer Connect","name":"projects/volunteer-connect-e5e6c","resources":{"hostingSite":"volunteer-connect-e5e6c","realtimeDatabaseInstance":"volunteer-connect-e5e6c-default-rtdb","storageBucket":"volunteer-connect-e5e6c.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'volunteer-connect-e5e6c'...
+[info] 
+[info] i  deploying database, storage, firestore, functions, hosting, remoteconfig 
+[info] Running command: npm --prefix "%RESOURCE_DIR%" run lint
+[error] 
+[error] Error: functions predeploy error: Command terminated with non-zero exit code1
